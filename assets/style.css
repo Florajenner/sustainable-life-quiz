@@ -60,3 +60,19 @@ h1 {
     text-align: center;
   }
   
+  #again {
+    text-align: center;  
+    padding: 20px;
+  }
+  
+  .again {
+    background-color: #9ba472; /* Green */
+    border: none;
+    padding: 14px 40px;
+    border-radius: 30px; 
+  }
+  
+  .again:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  
+  }
