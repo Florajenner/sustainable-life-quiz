@@ -234,3 +234,8 @@ function shuffleQuizData() {
       [quizData[i], quizData[j]] = [quizData[j], quizData[i]];
     }
   }
+
+  // Initialize the quiz
+
+shuffleQuizData();
+loadQuestion();
