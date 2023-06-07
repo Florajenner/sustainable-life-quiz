@@ -208,4 +208,11 @@ function showResult() {
       <p>${responseMessage}</p>
     `;
   }
+
+
+  // result container
+
+quizContainer.style.display = "none";
+resultContainer.style.display = "block";
+restart.style.visibility = "visible";
   
