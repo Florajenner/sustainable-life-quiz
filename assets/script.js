@@ -187,20 +187,17 @@ function showResult() {
     const percentageScore = (score / quizData.length) * 100;
   
     let responseMessage;
+
     if (percentageScore >= 0 && percentageScore <= 20) {
-      responseMessage =
-        "response 1";
-    } else if (percentageScore > 20 && percentageScore <= 40) {
-      responseMessage =
-      "response";
-    } else if (percentageScore > 40 && percentageScore <= 60) {
-      responseMessage =
-      "response 2";
-    } else if (percentageScore > 60 && percentageScore <= 80) {
-      responseMessage =
-      "response 3";
-    } else if (percentageScore > 80) {
-      responseMessage = "response 4";
+      responseMessage = "Oh no! We are all doomed. Maybe it's time to start growing your own oxygen.";
+    } else if (percentageScore > 10 && percentageScore <= 40) {
+      responseMessage = "Well, at least you're not causing immediate planetary catastrophe. But we still have a long way to go.";
+    } else if (percentageScore > 20 && percentageScore <= 60) {
+      responseMessage = "You're making progress! Keep it up and we might just survive long enough for the robots to take over.";
+    } else if (percentageScore > 30 && percentageScore <= 80) {
+      responseMessage = "Impressive! You're on your way to becoming an eco warrior. Keep fighting the good fight!";
+    } else if (percentageScore > 40 && percentageScore <= 90) {
+      responseMessage = "Congratulations, you magnificent eco warrior! With your sustainable superpowers, you're destined to save the world from impending doom.";
     }
 
     resultContainer.innerHTML = `
