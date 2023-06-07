@@ -1,5 +1,5 @@
 # About The Sustainable Life Quiz
-The Sustainable Life Quiz is a game fully intended to highlight users' sustainable living practices and depending on their score, encourage them to live a more sustainable life or congratulate them on living sustainably. The quiz aims to encourage individuals to think about changes they could make in their daily lives that will have a positive impact on the environment.
+The Sustainable Life Quiz is a game intended to highlight users' sustainable living practices and depending on their score, encourage them to live a more sustainable life or congratulate them on living sustainably. The quiz aims to encourage individuals to think about changes they could make in their daily lives that will have a positive impact on the environment.
 
 ## Screenshots
 ![Screenshot of Progress Bar](/assets/media/mockup.png)
@@ -10,13 +10,13 @@ The Sustainable Life Quiz is a game fully intended to highlight users' sustainab
 - As a frequent user, I would like to share this quiz with my friends.
 
 ## Design
-The quiz features a functional design. The straightforward design and generous use of white space improve the site's readability and user experience. The choice of colours and visuals is in harmony with the brand's environmentally conscious values, creating a sense of eco-friendliness.
+The straightforward design and generous use of white space improve the site's readability and user experience. The choice of colours and visuals is in harmony with the brand's environmentally conscious values, creating a sense of eco-friendliness.
 
 ### Colour Scheme
-The site is designed to work alongside the Sustainable Life website [Sustainable Life Website](https://florajenner.github.io/sustainable-life) and as such uses the same colour palette. The green colour palette reflects the sustainable theme of the quiz.
+The site is designed to work alongside the [Sustainable Life Website](https://florajenner.github.io/sustainable-life) and as such uses the same colour palette. The green colour palette reflects the sustainable theme of the quiz.
 
 ### Typography
-The font 'Quattrocento Sans' used for all headings and subheadings is sans-serif with clean lines, generating a minimalist and modern look for the website. The font choice for paragraphs is 'Quattrocento'. This easy-to-read font ensures readability and clarity.
+The font 'Quattrocento Sans' used for all headings and subheadings is sans-serif with clean lines, generating a minimalist and modern look for the game. The font choice for paragraphs is 'Quattrocento'. This easy-to-read font ensures readability and clarity.
 
 ## Features
 - Fully Responsive Design - The quiz is designed to be responsive to a variety of devices, such as mobile phones, tablets, laptops, and desktop computers.
@@ -79,7 +79,7 @@ Css passed without errors.
 
 ![CSS Validator](/assets/media/css-validator.png)
 
-Javascript passed with warning that I felt were acceptable.
+Javascript passed with warnings that I felt were acceptable.
 
 ![Javascript Validator](/assets/media/js-validator.png)
 
