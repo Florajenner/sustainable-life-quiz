@@ -136,7 +136,7 @@ const quizData = [
     currentQuizData.options.forEach((option, index) => {
       const optionElement = document.createElement("div");
       optionElement.classList.add("option");
-      optionElement.innerText = option;
+      optionElement.innerText = option.option;
   
       optionElement.addEventListener("click", () => selectOption(index));
   
