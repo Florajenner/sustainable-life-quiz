@@ -1,7 +1,9 @@
+/* Center align the h1 element */
 h1 {
     text-align: center;
   }
   
+  /* Center align the question container and style its text */
   #question-container {
     text-align: center;
     font-size: 2rem;
@@ -10,12 +12,14 @@ h1 {
     background-color: grey;
   }
 
+  /* Style the option container*/
   #option-container {
     display: block;
     max-width: 66.67%; 
     margin: 0 auto; 
   }
 
+  /* Style the options */
   .option {
     display: block;
     font-size: 1.5rem;
@@ -25,6 +29,7 @@ h1 {
     border-radius: 30px; 
   }
   
+  /* Set individual background colors for each option*/
   .option:nth-child(1) {
     background-color: #9ba472; /* Color for the first option */
   }
@@ -45,6 +50,7 @@ h1 {
     background-color: #bcc2a1; /* Color for the fifth option */
   }
 
+ /* Add hover effect to options*/
   .option:nth-child(1):hover,
   .option:nth-child(2):hover,
   .option:nth-child(3):hover,
@@ -53,6 +59,7 @@ h1 {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
   }
 
+  /* Style the result container */
   #result-container {
     padding: 20px;
     border-radius: 5px;
@@ -60,6 +67,7 @@ h1 {
     text-align: center;
   }
   
+  /* Style the again button */
   #again {
     text-align: center;  
     padding: 20px;
@@ -77,11 +85,13 @@ h1 {
   
   }
 
+  /* Style the progress bar container */
   #myProgress {
     width: 100%;
     background-color: blue;
   }
   
+  /* Style the progress bar */
   #myBar {
     width: 10%;
     height: 30px;
