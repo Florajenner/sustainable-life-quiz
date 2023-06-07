@@ -144,6 +144,28 @@ const quizData = [
     });
   }
 
+  // Function to handle option selection
+
+function selectOption(optionIndex) {
+    const currentQuizData = quizData[currentQuestion];
+  
+    if (optionIndex === currentQuizData.answer) {
+      score++;
+      console.log("Hey, that's right!");
+      console.log("Score: ", score);
+    } else {
+      console.log("Got that wrong!");
+    }
+  
+    const options = optionContainer.getElementsByClassName("option");
+    Array.from(options).forEach(option => {
+      option.removeEventListener("click", selectOption);
+      option.classList.add("disabled");
+    });
+  
+    showNextQuestion();
+  }
+
   // Function to display next question
 
 function showNextQuestion() {
@@ -154,3 +176,4 @@ function showNextQuestion() {
     } else {
       showResult();
     }
+
