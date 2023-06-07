@@ -14,6 +14,35 @@ h1 {
     display: block;
     max-width: 66.67%; 
     margin: 0 auto; 
-    background-color: grey;
   }
 
+  .option {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 30px; 
+  }
+  
+  .option:nth-child(1) {
+    background-color: #9ba472; /* Color for the first option */
+  }
+  
+  .option:nth-child(2) {
+    background-color: #a6ae81; /* Color for the second option */
+  }
+  
+  .option:nth-child(3) {
+    background-color: #b1b891; /* Color for the third option */
+  }
+  
+  .option:nth-child(4) {
+    background-color: #bcc2a1; /* Color for the fourth option */
+  }
+  
+  .option:nth-child(5) {
+    background-color: #bcc2a1; /* Color for the fifth option */
+  }
+
+  
