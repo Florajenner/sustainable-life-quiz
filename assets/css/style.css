@@ -33,7 +33,7 @@ h1 {
     font-size: 2rem;
     color: #4e4e4e;
     padding: 1rem;
-    background-color: grey;
+    background-color: rgb(209, 205, 205);
   }
   /* Style the option container*/
   #option-container {
@@ -107,7 +107,7 @@ h1 {
   /* Style the progress bar container */
   #myProgress {
     width: 100%;
-    background-color: blue;
+    background-color: grey;
   }
   
   /* Style the progress bar */
