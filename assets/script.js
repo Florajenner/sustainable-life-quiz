@@ -136,10 +136,21 @@ const quizData = [
     currentQuizData.options.forEach((option, index) => {
       const optionElement = document.createElement("div");
       optionElement.classList.add("option");
-      optionElement.innerText = option.option;
+      optionElement.innerText = option;
   
       optionElement.addEventListener("click", () => selectOption(index));
   
       optionContainer.appendChild(optionElement);
     });
   }
+
+  // Function to display next question
+
+function showNextQuestion() {
+    currentQuestion++;
+  
+    if (currentQuestion < quizData.length) {
+      loadQuestion();
+    } else {
+      showResult();
+    }
