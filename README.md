@@ -10,10 +10,10 @@ The Sustainable Life Quiz is a game fully intended to highlight users' sustainab
 - As a frequent user, I would like to share this quiz with my friends.
 
 ## Design
-The quiz features a functional design. The straightforward design and generous use of white space improve the site's readability and user experience. The choice of colors and visuals is in harmony with the brand's environmentally conscious values, creating a sense of eco-friendliness.
+The quiz features a functional design. The straightforward design and generous use of white space improve the site's readability and user experience. The choice of colours and visuals is in harmony with the brand's environmentally conscious values, creating a sense of eco-friendliness.
 
-### Color Scheme
-The site is designed to work alongside the Sustainable Life website [Sustainable Life Website](https://florajenner.github.io/sustainable-life) and as such uses the same color palette. The green color palette reflects the sustainable theme of the quiz.
+### Colour Scheme
+The site is designed to work alongside the Sustainable Life website [Sustainable Life Website](https://florajenner.github.io/sustainable-life) and as such uses the same colour palette. The green colour palette reflects the sustainable theme of the quiz.
 
 ### Typography
 The font 'Quattrocento Sans' used for all headings and subheadings is sans-serif with clean lines, generating a minimalist and modern look for the website. The font choice for paragraphs is 'Quattrocento'. This easy-to-read font ensures readability and clarity.
@@ -33,14 +33,14 @@ The font 'Quattrocento Sans' used for all headings and subheadings is sans-serif
 
 ![Screenshot of Results Button](/assets/media/try-again-button.png)
 
-- Randomized Questions - The quiz randomizes the questions each time it is started, providing variety to the user.
+- Randomised Questions - The quiz randomises the questions each time it is started, providing variety to the user.
 
 ## Languages, Tools & Technologies Used
 - HTML5
 - CSS
 - Javascript
 - Google Fonts - We sourced the fonts, 'Quattrocento Sans' and 'Quattrocento,' from Google Fonts.
-- Git - We utilized Git for version control, allowing for easy 'commit' and 'push' commands through the terminal.
+- Git - We utilised Git for version control, allowing for easy 'commit' and 'push' commands through the terminal.
 - Github - The code was stored on Github for a seamless and collaborative workflow.
 
 ## Deployment
@@ -87,6 +87,11 @@ Lighouse showed good scores.
 
 ![Lighthouse](/assets/media/lighthouse.png)
 
+## Device Testing
+To ensure responsiveness and optimal performance, the site was tested on various devices such as desktops, laptops, tablets, and smartphones.
+
+## Browser Testing
+The website was tested on multiple browsers, including Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari, to verify its proper functioning and display.
 
 ## Future projects
 Looking ahead, the vision for the quiz includes incorporating user-friendly sharing features, allowing our users to effortlessly share the quiz with friends and family. I would also like to include a high score feature and a way for users to compare their score against others.
