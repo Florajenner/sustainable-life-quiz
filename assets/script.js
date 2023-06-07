@@ -177,3 +177,29 @@ function showNextQuestion() {
       showResult();
     }
 
+// Function to show quiz result
+
+function showResult() {
+    quizContainer.style.display = "none";
+    resultContainer.style.display = "block";
+    restart.style.visibility = "visible";
+  
+    const percentageScore = (score / quizData.length) * 100;
+  
+    let responseMessage;
+    if (percentageScore >= 0 && percentageScore <= 20) {
+      responseMessage =
+        "response 1";
+    } else if (percentageScore > 20 && percentageScore <= 40) {
+      responseMessage =
+      "response";
+    } else if (percentageScore > 40 && percentageScore <= 60) {
+      responseMessage =
+      "response 2";
+    } else if (percentageScore > 60 && percentageScore <= 80) {
+      responseMessage =
+      "response 3";
+    } else if (percentageScore > 80) {
+      responseMessage = "response 4";
+    }
+  
