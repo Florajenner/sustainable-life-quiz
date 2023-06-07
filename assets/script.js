@@ -176,6 +176,7 @@ function showNextQuestion() {
     } else {
       showResult();
     }
+}
 
 // Function to show quiz result
 
