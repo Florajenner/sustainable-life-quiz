@@ -111,50 +111,40 @@ const quizData = [
     }
   ];
   
+  
   const quizContainer = document.getElementById("quiz-container");
   const questionContainer = document.getElementById("question-container");
   const optionContainer = document.getElementById("option-container");
   const submitButton = document.getElementById("submit-btn");
   const resultContainer = document.querySelector("#result-container");
   const restart = document.getElementById("again");
- 
+  const progressBar = document.getElementById("myBar");
   
   let currentQuestion = 0;
   let score = 0;
-  
   restart.style.visibility = "hidden";
-
-  // Function to load question and options
-
+  
   function loadQuestion() {
     const currentQuizData = quizData[currentQuestion];
-  
     questionContainer.innerText = currentQuizData.question;
-  
     optionContainer.innerHTML = "";
-  
     currentQuizData.options.forEach((option, index) => {
       const optionElement = document.createElement("div");
       optionElement.classList.add("option");
       optionElement.innerText = option.option;
-  
       optionElement.addEventListener("click", () => selectOption(index));
-  
       optionContainer.appendChild(optionElement);
     });
   }
-
-  // Function to handle option selection
-
-function selectOption(optionIndex) {
-    const currentQuizData = quizData[currentQuestion];
   
+  function selectOption(optionIndex) {
+    const currentQuizData = quizData[currentQuestion];
     if (optionIndex === currentQuizData.answer) {
       score++;
-      console.log("Hey, that's right!");
-      console.log("Score: ", score);
+      console.log('hey that right!');
+      console.log('score: ', score);
     } else {
-      console.log("There is a better answer!");
+      console.log('got that wrong!');
     }
   
     const options = optionContainer.getElementsByClassName("option");
@@ -165,30 +155,30 @@ function selectOption(optionIndex) {
   
     showNextQuestion();
   }
-
-  // Function to display next question
-
-function showNextQuestion() {
-    currentQuestion++;
   
+  function showNextQuestion() {
+    currentQuestion++;
     if (currentQuestion < quizData.length) {
       loadQuestion();
     } else {
       showResult();
     }
-}
-
-// Function to show quiz result
-
-function showResult() {
+  
+    // Update progress percentage
+    const progressPercentage = (currentQuestion / quizData.length) * 100;
+    progressBar.style.width = progressPercentage + "%";
+    progressBar.innerHTML = progressPercentage + "%";
+  }
+  
+  function showResult() {
     quizContainer.style.display = "none";
-    resultContainer.style.display = "block";
-    restart.style.visibility = "visible";
+    resultContainer.style.display = 'block';
+    restart.style.visibility = 'visible';
   
     const percentageScore = (score / quizData.length) * 100;
-  
     let responseMessage;
-
+  
+    // Define the response messages based on the percentage score
     if (percentageScore >= 0 && percentageScore <= 20) {
       responseMessage = "Oh no! We are all doomed. Maybe it's time to start growing your own oxygen.";
     } else if (percentageScore > 10 && percentageScore <= 40) {
@@ -200,40 +190,24 @@ function showResult() {
     } else if (percentageScore > 40 && percentageScore <= 90) {
       responseMessage = "Congratulations, you magnificent eco warrior! With your sustainable superpowers, you're destined to save the world from impending doom.";
     }
-
+  
     resultContainer.innerHTML = `
       <p>You scored ${score} out of ${quizData.length}</p>
       <p>${responseMessage}</p>
     `;
   }
-
-
-  // result container
-
-quizContainer.style.display = "none";
-resultContainer.style.display = "block";
-restart.style.visibility = "visible";
   
-
-// Function to shuffle quiz data
-
-function shuffleQuizData() {
+  function shuffleQuizData() {
     for (let i = quizData.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [quizData[i], quizData[j]] = [quizData[j], quizData[i]];
     }
   }
-
-  // Function to shuffle quiz data
-
-function shuffleQuizData() {
-    for (let i = quizData.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [quizData[i], quizData[j]] = [quizData[j], quizData[i]];
-    }
+  function setInitialProgressBar() {
+    progressBar.style.width = "0%";
+    progressBar.innerHTML = "0%";
   }
-
-  // Initialize the quiz
-
-shuffleQuizData();
-loadQuestion();
+  setInitialProgressBar();
+  shuffleQuizData();
+  loadQuestion();
+  
