@@ -29,11 +29,11 @@ The font 'Quattrocento Sans' used for all headings and subheadings is sans-serif
 - Fully Responsive Design - The quiz is designed to be responsive to a variety of devices, such as mobile phones, tablets, laptops, and desktop computers.
 - Quiz Data - The quiz has a range of questions on sustainability, each with five options. Each option has a points value depending on how sustainable it is between 1 and 5. This means that the user gets an overall score reflecting their sustainability.
 - Progress Bar - The quiz includes a progress bar that automatically updates as the user goes through the quiz. This feature is intended to encourage users to finish the quiz as it shows them how much they have completed.
-![Screenshot of Progress Bar](media/progress-bar.png)
+![Screenshot of Progress Bar](/Media/progress-bar.png)
 - Result Display - Once the user has finished answering the questions, a results page is displayed showing their score along with a message depending on the percentage they scored. This makes the user feel like the quiz is more personal and encourages them to become more sustainable and try the quiz again in the future.
-![Screenshot of Results Display](media/results-page.png)
+![Screenshot of Results Display](/Media/results-page.png)
 - "Try again" button - A try again button is displayed at the end to encourage users to see how their score changes if they choose more sustainable options or improve their sustainability knowledge.
-![Screenshot of Results Button](media/results-button.png)
+![Screenshot of Results Button](/Media/try-again-button.png)
 - Randomized Questions - The quiz randomizes the questions each time it is started, providing variety to the user.
 
 ## Languages, Tools & Technologies Used
