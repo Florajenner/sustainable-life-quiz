@@ -76,3 +76,20 @@ h1 {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
   
   }
+
+  #myProgress {
+    width: 100%;
+    background-color: blue;
+  }
+  
+  #myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #9ba472;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    padding: 20px
+    
+  }
+  
