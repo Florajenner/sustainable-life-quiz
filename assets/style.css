@@ -1,0 +1,15 @@
+#question-container {
+    text-align: center;
+    font-size: 2rem;
+    color: #4e4e4e;
+    padding: 1rem;
+    background-color: grey;
+  }
+
+  #option-container {
+    display: block;
+    max-width: 66.67%; 
+    margin: 0 auto; 
+    background-color: grey;
+  }
+
