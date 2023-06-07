@@ -123,3 +123,23 @@ const quizData = [
   let score = 0;
   
   restart.style.visibility = "hidden";
+
+  // Function to load question and options
+
+  function loadQuestion() {
+    const currentQuizData = quizData[currentQuestion];
+  
+    questionContainer.innerText = currentQuizData.question;
+  
+    optionContainer.innerHTML = "";
+  
+    currentQuizData.options.forEach((option, index) => {
+      const optionElement = document.createElement("div");
+      optionElement.classList.add("option");
+      optionElement.innerText = option.option;
+  
+      optionElement.addEventListener("click", () => selectOption(index));
+  
+      optionContainer.appendChild(optionElement);
+    });
+  }
