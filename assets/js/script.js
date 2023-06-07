@@ -3,6 +3,8 @@
  * The questions have a question, options, and an array of answers with 
  * different points values.
  */
+
+//The code that assigns points to each of the quiz answers was adapted from Stackoverflow.
 const quizData = [
     {
       question: "Which of the following energy sources is the most sustainable?",
@@ -178,6 +180,7 @@ const quizData = [
       showResult();
     }
     // Update progress percentage
+    // The progress bar feature was modified from code available at W3 Schools.
     const progressPercentage = (currentQuestion / quizData.length) * 100;
     progressBar.style.width = progressPercentage + "%";
     progressBar.innerHTML = progressPercentage + "%";
