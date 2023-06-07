@@ -1,5 +1,29 @@
 const quizData = [
-    // Quiz questions
+    {
+        question: "1",
+        options: ["1", "2", "3", "4","5"],
+        answer: 0,
+      },
+      {
+        question: "2",
+        options: ["1", "2", "3", "4","5"],
+        answer: 0,
+      },
+    {
+      question: "3",
+      options: ["1", "2", "3", "4","5"],
+      answer: 0,
+    },
+    {
+      question: "4",
+      options: ["1", "2", "3", "4","5"],
+      answer: 0,
+    },
+    {
+      question: "5",
+      options: ["1", "2", "3", "4","5"],
+      answer: 0,
+    },
   ];
   
   const quizContainer = document.getElementById("quiz-container");
