@@ -2,7 +2,7 @@
 The Sustainable Life Quiz is a game fully intended to highlight users' sustainable living practices and depending on their score, encourage them to live a more sustainable life or congratulate them on living sustainably. The quiz aims to encourage individuals to think about changes they could make in their daily lives that will have a positive impact on the environment.
 
 ## Screenshots
-![mockup] (/assets/media/mockup)
+![Screenshot of Progress Bar](/assets/media/mockup.png)
 
 ## User Stories
 - As a first-time visitor, I expect to navigate through the quiz with ease and find the quiz interesting, enjoyable, and fun.
