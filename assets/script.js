@@ -1,3 +1,8 @@
+/**
+ * Quiz data with questions, options, and answers.
+ * The questions have a question, options, and an array of answers with different points values.
+ */
+
 const quizData = [
     {
       question: "Which of the following energy sources is the most sustainable?",
@@ -111,19 +116,52 @@ const quizData = [
     }
   ];
   
-  
+  /**
+ * This is the container element for the quiz.
+ */
   const quizContainer = document.getElementById("quiz-container");
+  /**
+ * This is the container element displaying the current question.
+ */
   const questionContainer = document.getElementById("question-container");
+  /**
+ * This is the container element for displaying the options.
+ */
   const optionContainer = document.getElementById("option-container");
+  /**
+ * This is the submit button element.
+ */
   const submitButton = document.getElementById("submit-btn");
+  /**
+ * This is the container element displaying the quiz result.
+ */
   const resultContainer = document.querySelector("#result-container");
+  /**
+ * This is the restart button element.
+ */
   const restart = document.getElementById("again");
+  /**
+ * This is the progress bar element.
+ */
   const progressBar = document.getElementById("myBar");
   
+  /**
+ * Represents the index of the current question in the quiz data array.
+ */
   let currentQuestion = 0;
+  /**
+ * Users score in the quiz.
+ */
   let score = 0;
+  /**
+ * Initally hides the restart button
+ */
   restart.style.visibility = "hidden";
-  
+
+
+  /**
+ * Loads the current question and the options into the quiz container.
+ */
   function loadQuestion() {
     const currentQuizData = quizData[currentQuestion];
     questionContainer.innerText = currentQuizData.question;
@@ -137,6 +175,9 @@ const quizData = [
     });
   }
   
+  /**
+ * This function handles option selection
+ */
   function selectOption(optionIndex) {
     const currentQuizData = quizData[currentQuestion];
     if (optionIndex === currentQuizData.answer) {
@@ -156,6 +197,9 @@ const quizData = [
     showNextQuestion();
   }
   
+  /**
+ * Displays the next question in the quiz. If all questions have been answered it shows the result.
+ */
   function showNextQuestion() {
     currentQuestion++;
     if (currentQuestion < quizData.length) {
@@ -170,6 +214,10 @@ const quizData = [
     progressBar.innerHTML = progressPercentage + "%";
   }
   
+  /**
+ * Shows the final result of the quiz.
+ */
+
   function showResult() {
     quizContainer.style.display = "none";
     resultContainer.style.display = 'block';
@@ -196,13 +244,20 @@ const quizData = [
       <p>${responseMessage}</p>
     `;
   }
-  
+
+  /**
+ * Shuffles the quiz questions randomly.
+ */  
   function shuffleQuizData() {
     for (let i = quizData.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [quizData[i], quizData[j]] = [quizData[j], quizData[i]];
     }
   }
+
+  /**
+ * Sets the initial progress bar percentage.
+ */
   function setInitialProgressBar() {
     progressBar.style.width = "0%";
     progressBar.innerHTML = "0%";
