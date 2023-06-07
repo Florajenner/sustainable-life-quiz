@@ -202,4 +202,10 @@ function showResult() {
     } else if (percentageScore > 80) {
       responseMessage = "response 4";
     }
+
+    resultContainer.innerHTML = `
+      <p>You scored ${score} out of ${quizData.length}</p>
+      <p>${responseMessage}</p>
+    `;
+  }
   
