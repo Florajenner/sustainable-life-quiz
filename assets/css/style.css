@@ -1,120 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&display=swap');
+
 .container {
-  max-width: 1140px;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+	max-width: 1140px;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
+
 * {
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
 }
+
 body {
-  font-family: Quattrocento, sans-serif;
-  font-weight: 300;
-  color: #3a3a3a;
+	font-family: Quattrocento, sans-serif;
+	font-weight: 300;
+	color: #3a3a3a;
 }
+
 /* headings */
 h1 {
-  font-family: Quattrocento Sans, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #252525;
-  text-align: center;
+	font-family: Quattrocento Sans, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #252525;
+	text-align: center;
 }
-  
-  /* Center align the question container and style its text */
-  #question-container {
-    text-align: center;
-    font-size: 2rem;
-    color: #4e4e4e;
-    padding: 1rem;
-    background-color: rgb(209, 205, 205);
-  }
-  /* Style the option container*/
-  #option-container {
-    display: block;
-    max-width: 66.67%; 
-    margin: 0 auto; 
-  }
-  /* Style the options */
-  .option {
-    display: block;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 30px; 
-  }
-  
-  /* Set individual background colors for each option*/
-  .option:nth-child(1) {
-    background-color: #9ba472; /* Color for the first option */
-  }
-  
-  .option:nth-child(2) {
-    background-color: #a6ae81; /* Color for the second option */
-  }
-  
-  .option:nth-child(3) {
-    background-color: #b1b891; /* Color for the third option */
-  }
-  
-  .option:nth-child(4) {
-    background-color: #bcc2a1; /* Color for the fourth option */
-  }
-  
-  .option:nth-child(5) {
-    background-color: #bcc2a1; /* Color for the fifth option */
-  }
- /* Add hover effect to options*/
-  .option:nth-child(1):hover,
-  .option:nth-child(2):hover,
-  .option:nth-child(3):hover,
-  .option:nth-child(4):hover,
-  .option:nth-child(5):hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
-  }
-  /* Style the result container */
-  #result-container {
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  /* Style the again button */
-  #again {
-    text-align: center;  
-    padding: 20px;
-  }
-  
-  .again {
-    background-color: #9ba472; /* Green */
-    border: none;
-    padding: 14px 40px;
-    border-radius: 30px; 
-  }
-  
-  .again:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
-  
-  }
-  /* Style the progress bar container */
-  #myProgress {
-    width: 100%;
-    background-color: grey;
-  }
-  
-  /* Style the progress bar */
-  #myBar {
-    width: 10%;
-    background-color: #9ba472;
-    text-align: center;
-    color: white;
-    padding: 20px
-  }
+
+/* Center align the question container and style its text */
+#question-container {
+	text-align: center;
+	font-size: 2rem;
+	color: #4e4e4e;
+	padding: 1rem;
+	background-color: rgb(209, 205, 205);
+}
+
+/* Style the option container*/
+#option-container {
+	display: block;
+	max-width: 66.67%;
+	margin: 0 auto;
+}
+
+/* Style the options */
+.option {
+	display: block;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 1rem auto;
+	padding: 1rem;
+	border-radius: 30px;
+}
+
+/* Set individual background colors for each option*/
+.option:nth-child(1) {
+	background-color: #9ba472;
+	/* Color for the first option */
+}
+
+.option:nth-child(2) {
+	background-color: #a6ae81;
+	/* Color for the second option */
+}
+
+.option:nth-child(3) {
+	background-color: #b1b891;
+	/* Color for the third option */
+}
+
+.option:nth-child(4) {
+	background-color: #bcc2a1;
+	/* Color for the fourth option */
+}
+
+.option:nth-child(5) {
+	background-color: #bcc2a1;
+	/* Color for the fifth option */
+}
+
+/* Add hover effect to options*/
+.option:nth-child(1):hover,
+.option:nth-child(2):hover,
+.option:nth-child(3):hover,
+.option:nth-child(4):hover,
+.option:nth-child(5):hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* Style the result container */
+#result-container {
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Style the again button */
+#again {
+	text-align: center;
+	padding: 20px;
+}
+
+.again {
+	background-color: #9ba472;
+	/* Green */
+	border: none;
+	padding: 14px 40px;
+	border-radius: 30px;
+}
+
+.again:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+/* Style the progress bar container */
+#myProgress {
+	width: 100%;
+	background-color: grey;
+}
+
+/* Style the progress bar */
+#myBar {
+	width: 10%;
+	background-color: #9ba472;
+	text-align: center;
+	color: white;
+	padding: 20px
+}
