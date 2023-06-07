@@ -1,7 +1,7 @@
 # About The Sustainable Life Quiz
 The Sustainable Life Quiz is a game fully intended to highlight users' sustainable living practices and depending on their score, encourage them to live a more sustainable life or congratulate them on living sustainably. The quiz aims to encourage individuals to think about changes they could make in their daily lives that will have a positive impact on the environment.
 ## Screenshots
-*screenshots*
+(mockup) [/assets/media/mockup]
 ## User Stories
 - As a first-time visitor, I expect to navigate through the quiz with ease and find the quiz interesting, enjoyable, and fun.
 - As a returning visitor, I expect to be able to use the quiz to see if I have improved my sustainability score.
@@ -9,7 +9,7 @@ The Sustainable Life Quiz is a game fully intended to highlight users' sustainab
 ## Design
 The quiz features a functional design. The straightforward design and generous use of white space improve the site's readability and user experience. The choice of colors and visuals is in harmony with the brand's environmentally conscious values, creating a sense of eco-friendliness.
 ### Color Scheme
-The site is designed to work alongside the Sustainable Life website ([Sustainable Life Website](https://florajenner.github.io/sustainable-life) and as such uses the same color palette. The green color palette reflects the sustainable theme of the quiz.
+The site is designed to work alongside the Sustainable Life website [Sustainable Life Website](https://florajenner.github.io/sustainable-life) and as such uses the same color palette. The green color palette reflects the sustainable theme of the quiz.
 ### Typography
 The font 'Quattrocento Sans' used for all headings and subheadings is sans-serif with clean lines, generating a minimalist and modern look for the website. The font choice for paragraphs is 'Quattrocento'. This easy-to-read font ensures readability and clarity.
 ## Features
