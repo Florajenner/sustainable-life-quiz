@@ -154,7 +154,7 @@ function selectOption(optionIndex) {
       console.log("Hey, that's right!");
       console.log("Score: ", score);
     } else {
-      console.log("Got that wrong!");
+      console.log("There is a better answer!");
     }
   
     const options = optionContainer.getElementsByClassName("option");
